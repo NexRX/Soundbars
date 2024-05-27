@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+#root {
+  height: 100dvh;
+  width: 100dvw;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1 {
+  @apply font-bold text-5xl border-b-2 border-[#ffc131];
+}
+
+h2 {
+  @apply text-3xl;
+}
+
+h3 {
+  @apply text-xl;
+}
+
+input:not(.no-default),
+textarea:not(.no-default),
+button:not(.no-default) {
+  @apply bg-zinc-950 bg-opacity-60 hover:bg-opacity-80 py-1 px-2 rounded-md transition-all duration-200 border-zinc-700 border drop-shadow-lg;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+button:not(.no-default) {
+  @apply hover:bg-[#ffc131] hover:text-zinc-800 active:shadow-xl active:shadow-orange-400/40;
+}
+
+input:not(.no-default),
+textarea:not(.no-default) {
+  @apply outline-[#ffc131] hover:border-[#ffc131] focus:outline-double hover:outline-1 hover:outline-double;
+}
+
