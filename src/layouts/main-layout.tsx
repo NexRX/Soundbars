@@ -1,4 +1,4 @@
-import { type JSX, JSXElement, splitProps, createSignal } from "solid-js";
+import { type JSX, type JSXElement, splitProps, createSignal } from "solid-js";
 import {
   RiDocumentStickyNoteFill,
   RiSystemMenuFoldFill,

@@ -1,0 +1,1 @@
+import{a as e,i as s,t as i}from"./index-sGUorxdN.js";var l=i('<div><h1></h1><a href=https://tauri.app target=_blank><img src=/tauri.svg class="logo tauri"alt="Tauri logo">');function u(){const{name:t}=e();return(()=>{var a=l(),r=a.firstChild;return s(r,t),a})()}export{u as default};

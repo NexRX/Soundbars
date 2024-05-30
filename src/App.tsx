@@ -22,8 +22,12 @@ export default function App() {
         path="/note/:name"
         component={lazy(() => import("./routes/note"))}
       />
-      <Route path="/new/note" component={lazy(() => import("./routes/new-note"))} />
+      <Route
+        path="/new/note"
+        component={lazy(() => import("./routes/new-note"))}
+      />
       <Route path="/about" component={lazy(() => import("./routes/about"))} />
+      <Route path="/setup" component={lazy(() => import("./routes/setup"))} />
       <Route path="*" component={NotFound} />
     </Router>
   );

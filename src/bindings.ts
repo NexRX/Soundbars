@@ -11,6 +11,9 @@ try {
     if(e instanceof Error) throw e;
     else return { status: "error", error: e  as any };
 }
+},
+async isSetup() : Promise<boolean> {
+return await TAURI_INVOKE("is_setup");
 }
 }
 
